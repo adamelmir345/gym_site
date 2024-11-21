@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    background-color: rgba(41, 41, 41, 0.893);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+h1{
+    color: rgb(100, 0, 100);
+    margin-bottom: 60px;
+}
+iframe{
+    width:80% ;
+    height:500px ;
+    filter:invert(100%) ;
+}
