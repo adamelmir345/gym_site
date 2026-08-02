@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FitNess</title>
+    <link rel="stylesheet" href="../css/theme.css?v=2">
+    <link rel="stylesheet" href="../css/contact.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../js/animations.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="logo">
+            <i class="fas fa-dumbbell"></i>FitNess
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Accueil</a>
+            <a href="location.html">Localisation</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="card.html">Produits</a>
+            <a href="apropos.html">À propos</a>
+            <a href="loginsignup.html" class="btn-nav">Connexion</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-header reveal">
+            <h1>Contactez <span class="accent-text">Nous</span></h1>
+            <p>Une question ? Un projet de transformation ? N'hésitez pas à nous envoyer un message.</p>
+        </div>
+
+        <div class="contact-wrapper reveal">
+            <div class="contact-left">
+                <h2>Envoyez votre demande</h2>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message envoyé avec succès !');">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nom complet</label>
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Téléphone</label>
+                            <input type="tel" placeholder="+33 6 00 00 00 00">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Adresse e-mail</label>
+                            <input type="email" placeholder="votre@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Sujet</label>
+                            <input type="text" placeholder="Objet de votre message" required>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-premium">Envoyer le message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+            
+            <div class="contact-right">
+                <h2>Nos coordonnées</h2>
+                <div class="contact-info-list">
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>contact@fitness.ma</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Oujda Angad, Hay Zitoune Trig Jrada Avenue 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content reveal">
+            <div class="footer-col">
+                <a href="home.html" class="logo" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--text-white); text-decoration: none; margin-bottom: 1rem;">
+                    <i class="fas fa-dumbbell" style="color: var(--accent);"></i>FitNess
+                </a>
+                <p>Votre destination ultime pour sculpter le physique de vos rêves avec des équipements premium et un accompagnement sur mesure.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Liens Rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="card.html">Produits & Boutique</a></li>
+                    <li><a href="getstarted.html">Nos Abonnements</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                    <li><a href="location.html">Trouver un club</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FitNess. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>

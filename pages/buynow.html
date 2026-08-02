@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - FitNess</title>
+    <link rel="stylesheet" href="../css/theme.css?v=2">
+    <link rel="stylesheet" href="../css/buynow.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../js/animations.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="logo">
+            <i class="fas fa-dumbbell"></i>FitNess
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Accueil</a>
+            <a href="location.html">Localisation</a>
+            <a href="contact.html">Contact</a>
+            <a href="card.html">Produits</a>
+            <a href="apropos.html">À propos</a>
+            <a href="loginsignup.html" class="btn-nav">Connexion</a>
+        </nav>
+    </header>
+
+    <main class="payment-container">
+        <div class="payment-card reveal">
+            <div class="payment-header">
+                <h2>Finaliser votre commande</h2>
+                <p>Sélectionnez un mode de paiement rapide ou renseignez vos coordonnées bancaires.</p>
+            </div>
+            
+            <form class="payment-form" onsubmit="event.preventDefault(); alert('Paiement réussi ! Merci de votre confiance.'); window.location.href='home.html';">
+                <div class="payment-options">
+                    <button type="button" class="opt-btn" onclick="alert('PayPal sélectionné !')">
+                        <i class="fab fa-paypal"></i> PayPal
+                    </button>
+                    <button type="button" class="opt-btn" onclick="alert('Apple Pay sélectionné !')">
+                        <i class="fab fa-apple-pay"></i> Apple Pay
+                    </button>
+                    <button type="button" class="opt-btn" onclick="alert('Google Pay sélectionné !')">
+                        <i class="fab fa-google-pay"></i> Google Pay
+                    </button>
+                </div>
+
+                <div class="payment-separator">
+                    <hr>
+                    <span>OU PAYER PAR CARTE</span>
+                    <hr>
+                </div>
+
+                <div class="credit-card-inputs">
+                    <div class="payment-input-group">
+                        <label>Titulaire de la carte</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Nom complet" required>
+                        </div>
+                    </div>
+                    <div class="payment-input-group">
+                        <label>Numéro de carte</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-credit-card"></i>
+                            <input type="text" placeholder="0000 0000 0000 0000" pattern="[0-9\s]{13,19}" required>
+                        </div>
+                    </div>
+                    <div class="split-row">
+                        <div class="payment-input-group">
+                            <label>Date d'expiration</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-calendar-alt"></i>
+                                <input type="text" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+                            </div>
+                        </div>
+                        <div class="payment-input-group">
+                            <label>Code CVC</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="123" pattern="[0-9]{3,4}" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-premium checkout-btn">Payer maintenant</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content reveal">
+            <div class="footer-col">
+                <a href="home.html" class="logo" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--text-white); text-decoration: none; margin-bottom: 1rem;">
+                    <i class="fas fa-dumbbell" style="color: var(--accent);"></i>FitNess
+                </a>
+                <p>Votre destination ultime pour sculpter le physique de vos rêves avec des équipements premium et un accompagnement sur mesure.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Liens Rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="card.html">Produits & Boutique</a></li>
+                    <li><a href="getstarted.html">Nos Abonnements</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                    <li><a href="location.html">Trouver un club</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FitNess. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
